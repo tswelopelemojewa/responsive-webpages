@@ -1,0 +1,58 @@
+{
+    "user" : {
+        "fullName": "MOJEWA TSWELOPELE",
+        "photo" : "/images/tswelopele.JPG"
+    },
+    "city" : {
+        "name" : "SILICON VALLEY",
+        "photo" : "/images/silicon_valley.jpg",
+        "description" : "Silicon Valley is known as the cratle of innivation, it is where most well known top know Tech companies Originated. Big names like Google, Facebook, Amazon, Apple, Netflix and more...all reside at Silicon Valley. Silicon Valley is a region in Northern California that serves as a global center for high technology and innovation. It is located in the southern part of the San Francisco Bay Area"
+    },
+    "foreignLanguage" : {
+        "language" : "Japanese",
+        "phrases" : [{
+            "englishPhrase" : "I wanna watch Anime in Sub mode, with no subtitles",
+            "foreignLanguage" : "データサイエンスは未来です..."
+        },
+        {
+            "englishPhrase" : "Web development, all day Everyday",
+            "foreignLanguage" : "Web 開発、一日中毎日"
+        },
+        {
+            "englishPhrase" : "Data Science is the future",
+            "foreignLanguage" : "データサイエンスは未来です"
+        }]
+    },
+    
+    "course": "BENG-TECH ELECTRICAL ENGINEERING",
+    "institution": "UNIVERSITY OF JOHANNESBURG",
+
+    "favouriteSubjects" : [
+        {
+            "name" : "Algorithms",
+            "description" : "the use of computer programming Language that makes use of the "
+        },
+        {
+            "name" : "Mathematics",
+            "description" : "Introduction and application of Engineering mathematics and calculus"
+        },
+        {
+            "name" : "Electronics",
+            "description" : "Building and developing electronic circuit, working with transistors and other eletronic components, with a Function generator to generate signals and displaying results of and Oscilloscope."
+        }
+        ,
+        {
+            "name" : "Mechatronics",
+            "description" : "WO"
+        },
+        {
+            "name" : "Waves and Signals",
+            "description" : "Working with electronic devices to study different signal like FM, AM and also workinng with PWM"
+        }
+        ,
+        {
+            "name" : "Sensors and Devices",
+            "description" : "development of Electronic circuits that uses devices that senses"
+        }
+    ]
+}

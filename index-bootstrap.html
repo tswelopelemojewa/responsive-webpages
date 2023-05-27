@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mojewa Tswelopele</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <!-- Font Awesome 
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />-->
+
+        <!-- Google Fonts 
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />-->
+
+        <!-- MDB 
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+        rel="stylesheet"
+        />-->
+
+
+    </head>
+    <body style="background-image: url(/images/table-mountain.jpeg); background-size: cover">
+        
+        <main class="container-fluid" style="background-color: rgba(0, 0, 0, 0.3)">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Bootstrap</a>
+                        
+                        <img src="./images/itachi.jpg" alt="Logo" width="55" height="50" class="float-end align-text-top">
+                    </div>
+                </div>
+            </nav>
+            <br>
+
+        
+            <div class="container">
+
+            
+            <div Class="row" style="margin: auto;
+            padding: 1em;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.3);">
+            
+                <div class="col-md-6 text-center" >
+                    <h1 class="align-self-center" style="margin: auto; align-items: center; justify-content: center">{{data.user.fullName}}</h1>
+                </div>
+                <div class="col-md-6 text-center">
+                    <figure>
+                        <img class="col-8 rounded text-center"  src="{{data.user.photo}}" alt="my picture" />
+                    </figure>
+                </div>
+            </div>
+            <hr />
+
+            <div class="row" style="color: white">
+                <h2 class="">{{data.city.name}}</h2>
+                <div class="col-md-4">
+                    
+                    <img class="col-12 rounded mask" id="silicon-valey-pic" src="{{data.city.photo}}" alt="silicon valley" />
+                </div>
+                <div class="col-md-8">
+                    <p>Silicon Valley is known as the cratle of innivation, 
+                    it is where most well known top know Tech companies Originated.
+                    Big names like Google, Facebook, Amazon, Apple, Netflix and more...all reside at Silicon Valley.
+                    Silicon Valley is a region in Northern California that serves as a global center for high technology and innovation.
+                    It is located in the southern part of the San Francisco Bay Area</p>
+                </div>
+
+            </div>
+
+            <hr />
+
+            <div class="container">
+                <h2 style="color: white">{{data.foreignLanguage.language}}</h2>
+
+                <table class="table table-dark table-striped">
+                    
+                    <thead>
+                        <tr>
+                            <th>English Phrase</th>
+                            <th>Foreign Language Phrase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each data.foreignLanguage.phrases}}
+                            <tr>
+                                <td>{{englishPhrase}}</td>
+                                <td>{{foreignLanguage}}</td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+
+            </div>
+
+           
+            <div class="text-center" style="margin: auto;
+            padding: 1em;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.3);">
+                <hr />
+                <h1>{{data.course}}</h1>
+                <h3>{{data.institution}}</h3>
+                <hr />
+            </div><br>
+
+            <h2 class="text-center" style="color: white">Favourite Subjects</h2>
+
+            
+                <div class="row" style="color: white">
+                    {{#each data.favouriteSubjects}}
+                    <div class="card col-md-4 g-1 m-1" >
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{name}}</h5>
+                            <hr>
+                            <p class="card-text">{{description}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            
+            <br>
+
+
+            <footer>
+                <div class="text-center --bs-dark-bg-subtle">
+                    <br>
+                    <h4>Mojewa Tswelopele</h4>
+                    <h6>@2023</h6>
+                </div>
+            </footer>
+        </div>
+        </main>
+        <script src="" async defer></script>
+    </body>
+</html>
