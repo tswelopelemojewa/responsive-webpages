@@ -43,7 +43,7 @@
         ,
         {
             "name" : "Mechatronics",
-            "description" : "WO"
+            "description" : "Working with Arduino Uno and PLC along with sensors to automate Switches and relays"
         },
         {
             "name" : "Waves and Signals",
