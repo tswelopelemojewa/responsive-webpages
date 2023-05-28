@@ -14,7 +14,7 @@
         
         <main class="container-fluid" style="background-color: rgba(0, 0, 0, 0.3)">
 
-            <nav>
+            <nav class="#33383a teal darken-4">
                 <div class="nav-wrapper container">
                   <a href="/responsive_webpages/index.html" class="brand-logo left">Home</a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -22,126 +22,109 @@
                     <li><a href="/responsive_webpages/index-materialize.html">Materialize</a></li>
                   </ul>
                 </div>
-              </nav>
-              <br>
-
+            </nav>
+            <br>
             <br>
 
         
             <div class="container">
-
-            
-            <div Class="row" style="margin: auto;
-            padding: 0.5em;
-            width: 100%;
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.3);">
-            
-                <div class="col s12 m6 center-align" >
-                    <h2 class="align-self-center" style="margin: auto; align-items: center; justify-content: center">{{data.user.fullName}}</h2>
-                </div>
-                <div class="col s12 m6 center-align">
-                    <figure>
-                        <img class="col s12 m12 rounded center-align hoverable"  src="{{data.user.photo}}" alt="my picture" />
-                    </figure>
-                </div>
-            </div>
-            <hr />
-
-            <div class="row" style="color: white">
-                <h4 class="" >{{data.city.name}}</h4>
-                <div class="col s12 m4">
-                    
-                    <img class="col s12 m12 rounded mask" id="silicon-valey-pic" src="{{data.city.photo}}" alt="silicon valley" />
-                </div>
-                <div class="col s12 m8">
-                    <p>{{data.city.description}}</p>
-                </div>
-
-            </div>
-
-            <hr />
-
-            <div class="" style="background-color: rgba(0, 0, 0, 0.9)">
-                <h4 style="color: white">{{data.foreignLanguage.language}}</h4>
-            </div>
-            <div>
-                <table class="highlight striped #3b4043 cyan darken-4" style="border: 2px solid black">
-                    
-                    <thead>
-                        <tr>
-                            <th>English Phrase</th>
-                            <th>Foreign Language Phrase</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each data.foreignLanguage.phrases}}
-                            <tr>
-                                <td>{{englishPhrase}}</td>
-                                <td>{{foreignLanguage}}</td>
-                            </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-
-            </div>
-            <br>
-
-           
-            <div class="center-align" style="margin: auto;
-            padding: 1em;
-            width: 100%;
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.6);">
-                <hr />
-                <h3>{{data.course}}</h3>
-                <h4>{{data.institution}}</h4>
-                <hr />
-            </div><br>
-
-
-            <h4 class="center-align" style="margin: auto; ">Favourite Subjects</h4>
-            
-            <div class="row">
-                {{#each data.favouriteSubjects}}
-                <div class="card col s12 m4">
-                  <div class="card ">
-                    <div class="card-content">
-                      <span class="card-title">{{name}}</span>
-                      <p>{{description}}.</p>
+                <div Class="row" style="margin: auto;
+                    padding: 0.5em;
+                    width: 100%;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.3);">
+                
+                    <div class="col s12 m6 center-align" >
+                        <h2 class="center-align" style="">{{data.user.fullName}}</h2>
                     </div>
-                  </div>
+                    <div class="col s12 m6 center-align">
+                        <figure>
+                            <img class="col s12 m12 rounded center-align hoverable"  src="{{data.user.photo}}" alt="my picture" />
+                        </figure>
+                    </div>
                 </div>
-                {{/each}}
-            </div>
+                <hr />
+
+                <div class="row" style="color: white">
+                    <h4 class="" >{{data.city.name}}</h4>
+
+                    <div class="col s12 m4">
+                        <img class="col s12 m12 rounded mask" id="silicon-valey-pic" src="{{data.city.photo}}" alt="silicon valley" />
+                    </div>
+                    <div class="col s12 m8">
+                        <p>{{data.city.description}}</p>
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <div class="" style="background-color: rgba(0, 0, 0, 0.9)">
+                    <h4 style="color: white">{{data.foreignLanguage.language}}</h4>
+                </div>
+
+                <div>
+                    <table class="highlight striped #3b4043 cyan darken-4" style="border: 2px solid black">
+                        
+                        <thead>
+                            <tr>
+                                <th>English Phrase</th>
+                                <th>Foreign Language Phrase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each data.foreignLanguage.phrases}}
+                                <tr>
+                                    <td>{{englishPhrase}}</td>
+                                    <td>{{foreignLanguage}}</td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+
+                </div>
+                <br>
+
             
-                <div class="row" style="">
+                <div class="center-align" style="margin: auto;
+                    padding: 1em;
+                    width: 100%;
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.6);">
+
+                    <hr />
+                    <h3>{{data.course}}</h3>
+                    <h4>{{data.institution}}</h4>
+                    <hr />
+                </div><br>
+
+
+                <h4 class="center-align" style="margin: auto; color: white">Favourite Subjects</h4>
+                
+                <div class="row center-align" style="width: 100%">
                     {{#each data.favouriteSubjects}}
-                    <div class="card col s12 m4">
-                        <div class="" >
+                        <div class="col s12 m4 card" style="height: 200px;">
                             <div class="card-body">
                                 <h5 class="card-title center-align">{{name}}</h5>
                                 <hr>
                                 <p class="card-text">{{description}}</p>
                             </div>
                         </div>
-                    </div>
                     {{/each}}
                 </div>
-            
-            <br>
+                
+                <br>
 
-
-            
-        </div>
+            </div>
         </main>
+
         <footer>
-                <div class="center-align" style="background-color: black; color: white">
-                    <br>
-                    <h5>Mojewa Tswelopele</h5>
-                    <h6>@2023</h6>
-                </div>
-            </footer>
+            <div class="center-align #33383a teal darken-4" style="color: white">
+                <br>
+                <h5>Mojewa Tswelopele</h5>
+                <h6>@2023</h6>
+            </div>
+        </footer>
         <script src="" async defer></script>
     </body>
 </html>
