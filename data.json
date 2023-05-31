@@ -30,7 +30,8 @@
     "favouriteSubjects" : [
         {
             "name" : "Algorithms",
-            "description" : "the use of computer programming Language that makes use of the "
+            "badge": "best",
+            "description" : "The use of computer programming Language that makes use of the "
         },
         {
             "name" : "Mathematics",
@@ -52,7 +53,7 @@
         ,
         {
             "name" : "Sensors and Devices",
-            "description" : "development of Electronic circuits that uses devices that senses"
+            "description" : "Development of Electronic circuits that uses devices that senses"
         }
     ]
 }
